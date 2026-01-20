@@ -51,13 +51,13 @@ Run the setup script with the workspace directory as an argument:
 
 **Example:**
 ```bash
-./setup.sh workspace
+./setup.sh ../workspace
 ```
 
 This will:
 1. Build a Docker image with the configured modules
-2. Create a container with the specified workspace mounted
-3. Generate helper scripts in your workspace directory
+2. Create a container with the specified workspace directory mounted
+3. Generate helper scripts in your workspace directory to launch and recreate the docker container
 
 ### Parameters
 
@@ -141,9 +141,12 @@ nvidia-smi
 
 Test OpenCV CUDA support in Python:
 
-```python
+```bash
+python3 - << 'EOF'
 import cv2
-print(cv2.cuda.getCudaEnabledDeviceCount())
+print(cv2.getBuildInformation())
+EOF
+
 ```
 
 ## Troubleshooting
