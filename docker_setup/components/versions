@@ -1,0 +1,16 @@
+# ------- Cuda -------
+# NV_CUDA_CUDART_VERSION=12.5.82-1
+# CUDA_BASE_VERSION=12-5
+NV_CUDA_CUDART_VERSION=12.6.77-1 #trying newer version
+CUDA_BASE_VERSION=12-6
+NVARCH=x86_64
+CUDA_ARCH_BIN=8.6 #make sure to check your machine's graphics card compute capability
+
+# ------ OpenCV ------
+
+OPENCV_VERSION="4.10.0"
+OPENCV_CONTRIB_VERSION="4.10.0"
+PYTHON_VERSION="3.10"
+
+
+
